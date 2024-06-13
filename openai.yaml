@@ -1,0 +1,25 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0 
+  title: Custom API 
+  description: for fetching data from Custom API
+  contact:
+    name: sahil lede
+    email: t-sahillede@microsoft.com
+servers:
+  - url: https://www.google.com
+    description: Local server
+paths:
+  /get_data:
+    # this api return raw text data
+    get:
+      summary: Get data from API
+      description: Get data from API
+      responses:
+        '200':
+          description: A successful response
+          content:
+            text/plain:
+              schema:
+                type: string
+

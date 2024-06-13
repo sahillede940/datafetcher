@@ -1,0 +1,42 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Custom API",
+    "description": "for fetching data from Custom API",
+    "contact": {
+      "name": "sahil lede",
+      "email": "t-sahillede@microsoft.com"
+    },
+    "license": {
+      "name": "License Name",
+      "url": "http://example.com/license-url"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "Local server"
+    }
+  ],
+  "paths": {
+    "/get_data": {
+      "get": {
+        "summary": "Get data from API",
+        "description": "Get data from API",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
